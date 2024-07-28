@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# sh -c "$(curl -fsSL https://raw.githubusercontent.com/jilund/proxmox-helpers/main/install-qemu-agent.sh)"
+
 set -e
 
 apt update
