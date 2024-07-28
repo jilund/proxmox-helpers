@@ -1,5 +1,6 @@
 #!/bin/bash
 # update all containers
+# sh -c "$(curl -fsSL https://raw.githubusercontent.com/jilund/proxmox-helpers/main/mass-update-pct.sh)"
 
 # list of container ids we need to iterate through
 containers=$(pct list | tail -n +2 | cut -f1 -d' ')
