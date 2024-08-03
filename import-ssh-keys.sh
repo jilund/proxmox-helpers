@@ -3,9 +3,9 @@ set -e
 
 # sh -c "$(curl -fsSL https://raw.githubusercontent.com/jilund/proxmox-helpers/main/import-ssh-keys.sh)"
 
-apt update
-apt install ssh-import-id -y
-ssh-import-id-gh jilund
+# apt update
+# apt install ssh-import-id -y
+# ssh-import-id-gh jilund
 
 # list of container ids we need to iterate through
 containers=$(pct list | tail -n +2 | cut -f1 -d' ')
